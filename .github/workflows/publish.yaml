@@ -14,7 +14,7 @@ jobs:
         run: docker build . --tag my-image-name:$(date +%s)
 
       - name: Publish to Registry
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: ijasmoopan/go-github-actions
           username: ${{ secrets.DOCKER_USERNAME }}
